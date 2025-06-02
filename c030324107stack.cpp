@@ -22,5 +22,14 @@ int Empty(Stack *S){
     return (S->Count == 0);
 }
 
+void Pop(Stack *S, ItemType *x){
+    if (S->Count==0)
+    cout << "Stack Kosong!" << endl;
+    else{
+        --(S->Count);
+        *x = S->Item[S->Count];
+    }
+}
+
 int main(){
 }
