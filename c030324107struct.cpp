@@ -11,17 +11,18 @@ struct mahasiswa{
 
 int main(){
     mahasiswa rio;
-    cout << "NIM = "; 		getline(cin, rio.nim);
-	cout << "Nama = ";		getline(cin, rio.nama);
-	cout << "Alamat = ";	getline(cin, rio.alamat);
-	cout << "IPK = ";		cin >> rio.ipk;
+    mahasiswa* data = &rio;
+    cout << "NIM = "; 		getline(cin, data->nim);
+	cout << "Nama = ";		getline(cin, data->nama);
+	cout << "Alamat = ";	getline(cin, data->alamat);
+	cout << "IPK = ";		cin >> data->ipk;
 
     system("cls");
 	cout << "\n-------------- Data Anda --------------\n";
-	cout << "NIM    : " << rio.nim << endl;
-	cout << "Nama   : " << rio.nama << endl;
-	cout << "Alamat : " << rio.alamat << endl;
-	cout << "IPK    : " << rio.ipk << endl;
+	cout << "NIM    : " << data->nim << endl;
+	cout << "Nama   : " << data->nama << endl;
+	cout << "Alamat : " << data->alamat << endl;
+	cout << "IPK    : " << data->ipk << endl;
 	cout << "---------------------------------------\n";
     return 0;
 }
