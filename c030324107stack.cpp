@@ -10,5 +10,9 @@ typedef struct {
     int Count;
 } Stack;
 
+void inisialisasi(Stack *S) {
+    S->Count = 0;
+}
+
 int main(){
 }
