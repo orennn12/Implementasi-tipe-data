@@ -54,5 +54,39 @@ void PopStack(ItemType *x) {
 }
 
 int main(){
-   
+   inisialisasi(pStack);       
+
+    ItemType hasilPop;         
+    
+    PopStack(&hasilPop); 
+    PopStack(&hasilPop);  
+    PushStack(10);           
+    PushStack(20);          
+    PushStack(30);              
+    PushStack(40);           
+    PushStack(50);          
+    PushStack(60);           
+    PushStack(70);          
+    PushStack(80);              
+    PushStack(90);           
+    PushStack(100);
+    PushStack(70);          
+    PushStack(80);              
+    PushStack(90);           
+    PushStack(100);
+    PopStack(&hasilPop);
+    PopStack(&hasilPop);
+    PopStack(&hasilPop);    
+    PopStack(&hasilPop);
+    PopStack(&hasilPop);
+    PopStack(&hasilPop); 
+    PopStack(&hasilPop);
+    PopStack(&hasilPop);
+    PopStack(&hasilPop);
+    PopStack(&hasilPop);
+    PopStack(&hasilPop);
+    PopStack(&hasilPop); 
+    PopStack(&hasilPop);
+    PopStack(&hasilPop);
+    PopStack(&hasilPop); 
 }
