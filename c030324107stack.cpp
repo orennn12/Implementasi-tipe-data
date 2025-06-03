@@ -2,7 +2,7 @@
 #include <conio.h>
 using namespace std;
 
-const int MAXSTACK = 100;
+const int MAXSTACK = 12;
 
 typedef int ItemType;
 typedef struct {
@@ -28,6 +28,7 @@ void Pop(Stack *S, ItemType *x){
     else{
         --(S->Count);
         *x = S->Item[S->Count];
+        cout << "Pop: " << *x << endl;
     }
 }
 
@@ -37,8 +38,21 @@ void Push(ItemType x, Stack *S){
     else{
         S->Item[S->Count]=x;
         ++(S->Count);
+        cout << "Push: " << x << endl;
     }
 }
 
+Stack dataStack;                 
+Stack *pStack = &dataStack;     
+
+void PushStack(ItemType x) {  
+    Push(x, pStack);           
+}
+
+void PopStack(ItemType *x) { 
+    Pop(pStack, x);
+}
+
 int main(){
+   
 }
